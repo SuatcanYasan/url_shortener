@@ -1,9 +1,6 @@
 const router = require('express').Router()
-const todoMainRoute = require('./components/todo/todo.route.js')
-const authMainRoute = require('./components/auth/auth.route')
-const auth = require('./middlewares/middleware')
+const todoMainRoute = require('./components/url/url.route.js')
 
-router.use('/test', todoMainRoute)
-router.use('/auth', authMainRoute)
+router.use('/url', todoMainRoute)
 
 module.exports = router
